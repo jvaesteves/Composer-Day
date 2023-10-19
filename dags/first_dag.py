@@ -15,7 +15,7 @@
 """
 https://airflow.apache.org/docs/apache-airflow/stable/concepts/variables.html
 * gcp_project - the project id used
-* email - The email used to receive DAG updates
+* email - The email used to receive DAG updates!
 """
 
 import datetime
