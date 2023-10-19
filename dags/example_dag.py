@@ -40,5 +40,5 @@ with models.DAG(
 ) as dag:
     # Print the dag_run id from the Airflow logs
     print_dag_run_conf = bash.BashOperator(
-        task_id="print_dag_run_conf", bash_command="echo $(gcloud secrets versions access latest --secret=\"my-secret\")"
+        task_id="print_dag_run_conf", bash_command="echo {{ var.value.my-secret }}"
     )
